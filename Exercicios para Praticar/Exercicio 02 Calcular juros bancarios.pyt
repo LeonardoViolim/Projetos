@@ -1,6 +1,6 @@
-'''Calcular os juros de um depoisto bancario
+'''Calcular os juros de um deposito bancario
 
-#### Solucao 1
+#### Solucao 1 ####
 Etapa 1 - Iniciar
 Etapa 2 - Receber valor
 Etapa 3 - Receber valor Juros
@@ -13,16 +13,15 @@ juros_mensais = float(input("Informe juros mensais em decimais: "))
 valor_juros = valor_devido * juros_mensais
 valor_devido_atualizado = valor_juros + valor_devido
 print(valor_devido_atualizado)
-'''
 
-'''
-#### Solucao 2
+
+
+#### Solucao 2 ####
 Etapa 1 - Iniciar
 Etapa 2 - Receber valor, anos, taxa
 Etapa 4 - Calcular(juros = valor*ano*taxa/100)
 Etapa 5 - Exibir juros
 Etapa 6 - Fim
-
 
 valor_inicial = float(input("Informe o valor inicial: "))
 periodo_aplicacao = int(input("Informe o periodo da aplicação em meses: "))
@@ -32,18 +31,17 @@ valor_atualizado = valor_inicial+juros
 print("O valor atualizado com juros e: ",valor_atualizado)
 '''
 
-'''
-#### Solucao 3
-Etapa 1 - Iniciar
-Etapa 2 - Receber valor, anos, taxa
-Etapa 4 - Calcular(juros = valor*ano*taxa/100)
-Etapa 5 - Exibir juros
-Etapa 6 - Garanta que o cliente ira informar um valor valido
-Etapa 7 - Fim
 
-'''
+#### Solucao 3 ####
+#Etapa 1 - Iniciar
+#Etapa 2 - Receber valor, anos, taxa
+#Etapa 4 - Calcular(juros = valor*ano*taxa/100)
+#Etapa 5 - Exibir juros
+#Etapa 6 - Garanta que o cliente irá informar um valor válido
+#Etapa 7 - Fim
+
+
 #funcao para verificar se e um valor valido
-
 def is_number(s):
     try:
         float(s)
