@@ -51,7 +51,7 @@ def is_number(s):
     
 #Solicitacao dos dados de entrada
 while True:
-    valor_inicial = input("Informe o valor inicial: ")
+    valor_inicial = float(input("Digite o valor inicial(R$): "))
     if is_number(valor_inicial):
         valor_inicial = float(valor_inicial)
         break
@@ -59,15 +59,15 @@ while True:
         print("Por favor, insira um valor numérico.")
 
 while True:
-    periodo_aplicacao = input("Informe o período da aplicação em meses: ")
-    if periodo_aplicacao.isdigit():
+    periodo_aplicacao = int(input("Digite o número de anos: "))
+    if is_number(periodo_aplicacao):
         periodo_aplicacao = int(periodo_aplicacao)
         break
     else:
         print("Por favor, insira um valor numérico.")
 
 while True:
-    taxa_aplicacao = input("Informe a taxa da aplicação: ")
+    taxa_aplicacao = float(input("Digite a taxa de juros anual(%): "))
     if is_number(taxa_aplicacao):
         taxa_aplicacao = float(taxa_aplicacao)
         break
@@ -79,4 +79,5 @@ juros = (valor_inicial*periodo_aplicacao*taxa_aplicacao)/100
 valor_atualizado = valor_inicial+juros
 
 #Impressao do Resultado
-print("O valor atualizado com juros é: ",valor_atualizado)
+print(f"O valor atualizado após {periodo_aplicacao} anos e R${valor_atualizado:.2f}")
+print(f"Os juros acumulados nesse período são R${juros}")

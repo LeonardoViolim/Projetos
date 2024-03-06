@@ -7,8 +7,13 @@
 #Etapa 5 - Exibir area
 #Etapa 6 - Fim
 
+#Solicite ao usuário que insira o valor do raio do círculo
 raio = float(input("Informe o valor do raio da circunferência: "))
+
+#Calcule a área do círculo
 area = 3.14159*raio*raio
+
+#Exiba a área do círculo na tela
 print(area)
 
 #Utilizando a funcao math
