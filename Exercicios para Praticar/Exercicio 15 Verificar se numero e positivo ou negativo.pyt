@@ -1,4 +1,4 @@
-'''rograma para verificar o numero positivo ou negativo
+'''Programa para verificar o numero positivo ou negativo
 
 Etapa 1 - Iniciar
 Etapa 2 - Ler numero
